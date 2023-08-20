@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2d4059;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.App {
+    background-color: #1b262c;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    width: 80%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #f4a261;
+}
+
+.searchBox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+input[type="text"] {
+    flex: 1;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #30475e;
+    color: #ffffff;
+}
+
+button {
+    background-color: #e76f51;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d45d47;
+}
+
+.showResults {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #f9c74f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h4 {
+    color: #f9c74f;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+button.playAudio {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #2a9d8f;
+    margin-left: 10px;
+}
+
+.error {
+    color: #e63946;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.savedWords {
+    margin-top: 40px;
+}
+
+.savedWords h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #f4a261;
+}
+
+.savedWords ul {
+    list-style: none;
+    padding: 0;
+}
+
+.savedWords li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.languageSelect {
+    margin-top: 20px;
+}
+
+.languageSelect label {
+    font-size: 20px;
+    color: #f9c74f;
+}
+
+.languageSelect select {
+    font-size: 18px;
+    padding: 7px;
+    border: none;
+    border-radius: 8px;
+    background-color: #30475e;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 640px) {
+    body {
+        font-size: 8px;
+    }
+    .App {
+        width: 77%;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    #root {
+        width: 94%;
+    }
+}
